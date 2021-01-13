@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Remove Portfilo</title>
+    <style>
+        body {
+            background-color: #a9927d;
+            font-family: 'Economica', sans-serif;
+
+        }
+
+        form {
+            font-size: 25px;
+            background-color: #F2F4F3;
+            padding: 5%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 7px rgba(100, 100, 100, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Remove Portfilo</h1><br>
+        <form method="POST" action="/remove">
+            Work's Name<input type="text" class="form-control" name="title" placeholder="Type your work's name" required><hr>
+
+            <input type="submit" value="Remove">
+        </form>
+
+    </div>
+
+</body>
+
+
+</html>

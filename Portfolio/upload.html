@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Upload Portfilo</title>
+    <style>
+        body {
+            background-color: #a9927d;
+            font-family: 'Economica', sans-serif;
+
+        }
+
+        form {
+            font-size: 25px;
+            background-color: #F2F4F3;
+            padding: 5%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 7px rgba(100, 100, 100, 0.5);
+        }
+
+        .ThreeDModel {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload Portfilo</h1><br>
+        <form method="post" action="/upload" encType="multipart/form-data">
+            Work's Name<input type="text" class="form-control" name="title" placeholder="Type your work's name" required><hr>
+            Category: <select name="category" id="category" required>
+                <option value="" selected disabled hidden>Choose category</option>
+                <option>Character</option>
+                <option>Scence</option>
+                <option>2DAnimation</option>
+                <option>3DAnimation</option>
+                <option>Sketching</option>
+                <option>Digital Art</option>
+                <option>Painting</option>
+                <option>PC Game</option>
+                <option>Microfilm</option>
+                <option>Puppet Animation</option>
+                <option>Dubbing</option>
+                <option>Time-Lapse</option>
+                <option>Photograph</option>
+                <option>Handcraft</option>
+            </select>
+            <hr>
+            Creator:<br>
+            <!-- <select multiple="multiple" name="creator" id="creator">
+                <option value="ZHANG,YA-JIE">ZHANG,YA-JIE</option>
+                <option value="LI,MENG-SHAN">LI,MENG-SHAN</option>
+                <option value="LAU,CHING-LAM">LAU,CHING-LAM</option>
+                <option value="TSENG,CHEN-YAO">TSENG,CHEN-YAO</option>
+                <option value="CHEN,YU-XIANG">CHEN,YU-XIANG</option>
+            </select>
+            <hr> -->
+            <input type="checkbox" name="creator1" value="ZHANG,YA-JIE">ZHANG,YA-JIE<br>
+            <input type="checkbox" name="creator2" value="LI,MENG-SHAN">LI,MENG-SHAN<br>
+            <input type="checkbox" name="creator3" value="LAU,CHING-LAM">LAU,CHING-LAM<br>
+            <input type="checkbox" name="creator4" value="TSENG,CHEN-YAO">TSENG,CHEN-YAO<br>
+            <input type="checkbox" name="creator5" value="CHEN,YU-XIANG">CHEN,YU-XIANG
+            <hr>
+
+            Poster: (.JPG)<input class="form-control-file" type="file" accept=".jpg" name="poster" required><br>
+            Introdution: <input type="text" class="form-control" name="introdution"><br>
+            workinfomationURL : (non-necessary)<input type="url" class="form-control" name="workurl">
+            <hr>
+
+            <input type="submit" value="Upload">
+        </form>
+
+    </div>
+    <script>
+        function show() {
+            obj = document.getElementsByName("test");
+            check_val = [];
+            for (k in obj) {
+                if (obj[k].checked)
+                    check_val.push(obj[k].value);
+            }
+            alert(check_val);
+        }
+    </script>
+
+</body>
+
+
+</html>

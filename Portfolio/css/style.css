@@ -1,0 +1,106 @@
+body{
+  background-color:#A9927D;
+  font-family: 'Economica',sans-serif;
+  height:100%;
+}
+
+div.col{
+  padding: 0px;
+  margin: 0px;
+}
+#head{
+  height: 10%;
+  background-color: #F2F4F3;
+}
+#head img{
+  width :300px;
+  height: auto;
+  position:static;
+  margin: 10px 50px;
+}
+
+#intro{
+  background-color: #22233B;
+  height: 25vw;
+  min-height: 300px;
+}
+
+#memberintro img{
+  width: 15%;
+  height: 20vw;
+  min-height: 250px;
+  position: relative;
+  left: 10%;
+  margin: 30px 10px;
+  object-fit: cover;
+}
+
+.carousel-caption{
+  text-align: left;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  font-size: 1.5vw;
+  color: #A9927D;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+#works{
+  text-align: center;
+  background-color: #A9927D;
+  height: 30%;
+}
+#workpic img{
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+  margin: 10px 0px;
+  object-fit: cover;
+}
+#workpic>div>a>p{
+  position: absolute;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  display: none;
+}
+#workpic a:hover  p{
+  display: block;
+  cursor: pointer;
+}
+
+#workpic a:hover img{
+  filter: blur(3px);
+}
+
+#footer{
+	clear: both;
+	background: rgb(255, 255, 255);
+	padding: 10px;
+	border-top: 2px solid rgb(184, 182, 182);
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+  width: 100%;
+}
+.carousel-caption::-webkit-scrollbar {
+  width: 10px;
+}
+
+.carousel-caption::-webkit-scrollbar-track {
+  background: #0c0b0b;
+}
+
+.carousel-caption::-webkit-scrollbar-thumb {
+  background: rgb(95, 95, 95);
+}
+
+.carousel-caption::-webkit-scrollbar-thumb:hover {
+  background: rgb(59, 59, 59);
+}
+

@@ -1,0 +1,28 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "package",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multimediadesign/webpage-raxian3150.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/multimediadesign/webpage-raxian3150/issues"
+  },
+  "homepage": "https://github.com/multimediadesign/webpage-raxian3150#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "image-size": "^0.9.3",
+    "nedb": "^1.8.0"
+  }
+}

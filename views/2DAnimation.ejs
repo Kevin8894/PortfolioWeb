@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/sort.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery-scrolltofixed.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.header').scrollToFixed();
+        })</script>
+    <title>Shiang Bu Dau Ba</title>
+</head>
+
+<body>
+
+    <header id="head">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1"><img src="image/website_logo02.png"></div>
+
+            </div>
+        </div>
+    </header>
+    <nav class="header navbar-expand-md navbar-light bg-light ">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav">
+            <div class="container-fluid">
+                <div class="row collapse navbar-collapse" id="collapse_target">
+                    <div class="col-md ">
+                        <li class="dropdown nav-item">
+                            <button class="dropbtn">3D Model</button>
+                            <div class="dropdown-content">
+                                <a class="nav-link" href="#">Character</a>
+                                <a class="nav-link" href="#">Scence</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-md">
+                        <li class="dropdown nav-item">
+                            <button class="dropbtn">Animation</button>
+                            <div class="dropdown-content">
+                                <a class="nav-link" href="/2DAnimation.html">2D</a>
+                                <a class="nav-link" href="/3DAnimation.html">3D</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-md">
+                        <li class="dropdown nav-item">
+                            <button class="dropbtn">Illustration</button>
+                            <div class="dropdown-content">
+                                <a class="nav-link" href="#">Sketching</a>
+                                <a class="nav-link" href="#">Digital Art</a>
+                                <a class="nav-link" href="#">Painting</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-md">
+                        <li class="dropdown nav-item">
+                            <button class="dropbtn">PC Game</button>
+                        </li>
+                    </div>
+                    <div class="col-md">
+                        <li class="dropdown nav-item">
+                            <button class="dropbtn">Video</button>
+                            <div class="dropdown-content">
+                                <a class="nav-link" href="#">Microfilm</a>
+                                <a class="nav-link" href="#">Puppet Animation</a>
+                                <a class="nav-link" href="#">Dubbing</a>
+                                <a class="nav-link" href="#">Time-Lapse</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-md">
+                        <li class="dropdown nav-item">
+                            <button class="dropbtn">Photograph</button>
+                            <div class="dropdown-content">
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-md">
+                        <li class="dropdown nav-item">
+                            <button class="dropbtn">Handcraft</button>
+                            <div class="dropdown-content">
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div>
+        <div id=intro>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 text-center offset-md-2">
+                        <h2>2D Animation</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident aliquam harum fuga quae
+                            mollitia
+                            dolor quia explicabo laudantium! Eaque, ab amet dolore deleniti sequi ipsa. Dicta harum sint
+                            consequatur
+                            labore!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio">
+                <div class="container-fluid">
+                    <div class="row">
+                        <% work.forEach(function(item){ %>
+                            <div class="col-md-3 coloffset">
+                                <div class="img-wrapper" )">
+                                    <img src="/upload/<%= item.title %>.jpg" alt="" title="<%= item.title %>"
+                                        onclick="change(this)">
+                                    <p style="display: none;">
+                                        <%= item.introduction %>"
+                                    </p>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-model">
+        <div class="container-fluid" id="workintro">
+
+            <div class="model-content">
+
+                <div class="row">
+
+                    <div class="col-lg-8">
+                        <div class="close">&times;</div>
+                        <img id="intro-img" src="" alt="">
+                    </div>
+                    <div class="col-lg-4">
+                        <h1 id="intro-title"></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia corrupti debitis fugit ipsam
+                            doloribus
+                            facere. Alias deserunt quidem nihil itaque minima? Quam, tempore. Aliquid minima, provident
+                            fugit saepe
+                            sunt aspernatur!</p>
+                        <p>Creadit By ABC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.close').addEventListener('click',
+            function () {
+                document.querySelector('.bg-model').style.display = 'none';
+            });
+
+        function change(x) {
+            document.querySelector('.bg-model').style.display = 'flex';
+            document.getElementById('intro-img').setAttribute("src", x.src);
+            document.getElementById('intro-title').innerHTML = x.title;
+        }
+    </script>
+</body>
+
+
+
+
+</html>
